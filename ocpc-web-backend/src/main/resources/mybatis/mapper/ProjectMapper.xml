@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.violet.ocpc.web.dao.mapper.ProjectMapper">
+	<resultMap id="BaseResultMap" type="com.violet.ocpc.web.holder.ProjectHolder">
+		 <id column="PROJ_OID" jdbcType="DECIMAL" property="projectOid" />
+		 <result column="USER_OID" jdbcType="DECIMAL" property="userOid" />
+		 <result column="PROJ_NAME" jdbcType="VARCHAR" property="projectName" />
+		 <result column="PROJ_DESC" jdbcType="VARCHAR" property="projectDesc" />
+		 <result column="FILE_COUNT" jdbcType="INTEGER" property="fileCount" />
+		 <result column="PROJ_MARK" jdbcType="VARCHAR" property="projMark"/>
+		 <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate"/>
+		 <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate"/>
+	</resultMap>
+	
+	<select id="getProjectListByAnd" parameterType="com.violet.ocpc.web.holder.ProjectHolder"
+		resultMap="BaseResultMap">
+		select * from PROJECT
+		<where>
+		  <if test="projectOid != null" >
+	        PROJ_OID = #{projectOid,jdbcType=DECIMAL}
+	      </if>
+	      <if test="userOid != null" >
+	        AND USER_OID = #{userOid,jdbcType=DECIMAL}
+	      </if>
+	      <if test="projectName != null" >
+	       	AND PROJ_NAME like concat('%',#{projectName,jdbcType=VARCHAR},'%')
+	      </if>
+	    </where>
+	</select>
+	
+	<insert id="insertProject" parameterType="com.violet.ocpc.web.holder.ProjectHolder">
+		INSERT INTO PROJECT (
+			PROJ_OID, USER_OID, PROJ_NAME, PROJ_DESC, FILE_COUNT, PROJ_MARK, CREATE_DATE, UPDATE_DATE
+		) VALUES (
+			#{projectOid,jdbcType=DECIMAL}, #{userOid,jdbcType=DECIMAL}, #{projectName,jdbcType=VARCHAR},
+			#{projectDesc,jdbcType=VARCHAR}, #{fileCount,jdbcType=INTEGER}, #{projMark,jdbcType=VARCHAR},
+			CURRENT_TIMESTAMP, #{updateDate, jdbcType=TIMESTAMP}
+		)
+	</insert>
+</mapper>

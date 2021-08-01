@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: mia-web-backend
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: Administrator
+Specification-Title: mia-web-backend
+Implementation-Vendor-Id: com.violet.mia
+Build-Jdk: 1.8.0_74
+Specification-Version: 1.0.0-SNAPSHOT
+Created-By: Maven Integration for Eclipse
+

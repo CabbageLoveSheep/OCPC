@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mia-web-backend:war">
+    <output-path>$PROJECT_DIR$/mia-web-backend/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mia-web-backend</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mia.war">
+      <element id="artifact" artifact-name="mia-web-backend:war exploded" />
+    </root>
+  </artifact>
+</component>

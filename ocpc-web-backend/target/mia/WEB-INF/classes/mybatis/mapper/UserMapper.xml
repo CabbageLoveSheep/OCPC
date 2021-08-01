@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.violet.mia.web.dao.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.violet.mia.web.holder.UserHolder">
+    <id column="USER_OID" jdbcType="DECIMAL" property="userOid" />
+    <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+    <result column="LOGIN_ID" jdbcType="VARCHAR" property="loginId" />
+    <result column="LOGIN_PWD" jdbcType="VARCHAR" property="loginPwd" />
+    <result column="GENDER" jdbcType="VARCHAR" property="gender" />
+    <result column="MOBILE" jdbcType="VARCHAR" property="mobile" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="LEVEL" jdbcType="INTEGER" property="level" />
+    <result column="DEF_MARK" jdbcType="VARCHAR" property="defMark" />
+    <result column="FAIL_ATTEMPTS" jdbcType="INTEGER" property="failAttempts" />
+    <result column="LAST_LOGIN_DATE" jdbcType="TIMESTAMP" property="lastLoginDate" />
+    <result column="ACTIVE" jdbcType="VARCHAR" property="active" />
+    <result column="BLOCKED" jdbcType="VARCHAR" property="blocked" />
+    <result column="CREATED_DATE" jdbcType="TIMESTAMP" property="createdDate" />
+    <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <select id="queryUserListByAnd" resultMap="BaseResultMap"
+          parameterType="com.violet.mia.web.holder.UserHolder" >
+    select * from USER
+    <where>
+      <if test="userOid != null" >
+        USER_OID = #{userOid,jdbcType=DECIMAL}
+      </if>
+      <if test="userName != null" >
+        AND USER_NAME = #{userName,jdbcType=VARCHAR}
+      </if>
+      <if test="email != null" >
+        AND EMAIL = #{email,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+  
+  <select id="queryUserListByLogin" resultMap="BaseResultMap"
+          parameterType="com.violet.mia.web.holder.UserHolder" >
+       select * from USER
+       WHERE LOGIN_ID = #{loginId,jdbcType=VARCHAR} AND binary LOGIN_PWD = #{loginPwd,jdbcType=VARCHAR}
+  </select>
+  
+  <insert id="insertUser" parameterType="com.violet.mia.web.holder.UserHolder">
+  	INSERT INTO USER (
+  		USER_OID, USER_NAME, LOGIN_ID, LOGIN_PWD, GENDER, MOBILE, EMAIL, LEVEL, DEF_MARK,
+  			FAIL_ATTEMPTS, LAST_LOGIN_DATE, ACTIVE, BLOCKED, CREATE_DATE, UPDATE_DATE
+  	) VALUES (
+  		#{userOid, jdbcType=DECIMAL}, #{userName, jdbcType=VARCHAR}, #{loginId, jdbcType=VARCHAR},
+  		#{loginPwd, jdbcType=VARCHAR}, #{gender, jdbcType=VARCHAR}, #{mobile, jdbcType=VARCHAR},
+  		#{email, jdbcType=VARCHAR}, #{level, jdbcType=INTEGER}, #{defMark, jdbcType=VARCHAR},
+  		#{failAttempts, jdbcType=INTEGER}, #{lastLoginDate, jdbcType=TIMESTAMP}, #{active, jdbcType=VARCHAR},
+  		#{blocked, jdbcType=VARCHAR}, CURRENT_TIMESTAMP, #{updateDate, jdbcType=TIMESTAMP}
+  	)
+  </insert>
+</mapper>

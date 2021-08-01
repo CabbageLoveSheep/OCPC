@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.violet.mia.web.dao.mapper.EmailVerifyCodeMapper">
+  <resultMap id="BaseResultMap" type="com.violet.mia.web.holder.EmailVerifyCodeHolder">
+    <id column="RECORD_OID" jdbcType="DECIMAL" property="recordOid" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="VERIFY_CODE" jdbcType="VARCHAR" property="verifyCode" />
+    <result column="CREATED_DATE" jdbcType="TIMESTAMP" property="createdDate" />
+  </resultMap>
+  
+  <insert id="insertEmailVerifyCode" parameterType="com.violet.mia.web.holder.EmailVerifyCodeHolder">
+  	INSERT INTO EMAIL_VERIFY_RECORD (
+  		RECORD_OID, EMAIL, VERIFY_CODE, IS_DISABLE, CREATE_DATE
+  	) VALUES (
+  		#{recordOid, jdbcType=DECIMAL}, #{email, jdbcType=VARCHAR}, 
+  		#{verifyCode, jdbcType=VARCHAR}, 'N', CURRENT_TIMESTAMP
+  	)
+  </insert>
+  
+  <update id="updateSameEmailCodeToDisable" parameterType="com.violet.mia.web.holder.EmailVerifyCodeHolder">
+  	update EMAIL_VERIFY_RECORD SET 
+  		IS_DISABLE = 'Y'
+  	WHERE IS_DISABLE = 'N'
+  	<if test="recordOid != null">
+  		AND RECORD_OID = #{recordOid, jdbcType=DECIMAL}
+  	</if>
+  	<if test="email != null">
+  		AND EMAIL = #{email, jdbcType=VARCHAR}
+  	</if>
+  </update>
+  
+  <select id="verifyEmailCode" resultMap="BaseResultMap"
+  	 parameterType="com.violet.mia.web.holder.EmailVerifyCodeHolder">
+  	SELECT * FROM EMAIL_VERIFY_RECORD 
+  		WHERE EMAIL = #{email, jdbcType=VARCHAR} 
+  			AND VERIFY_CODE = #{verifyCode, jdbcType=VARCHAR}
+  			AND IS_DISABLE = #{isDisable, jdbcType=VARCHAR} 
+  			AND CREATE_DATE >= date_add(now(),interval -30 minute)
+  </select>
+</mapper>

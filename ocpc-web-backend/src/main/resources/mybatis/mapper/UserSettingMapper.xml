@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.violet.ocpc.web.dao.mapper.UserSettingMapper">
+	<resultMap id="BaseResultMap" type="com.violet.ocpc.web.holder.UserSettingHolder">
+		 <id column="USER_OID" jdbcType="DECIMAL" property="userOid" />
+		 <result column="RUN_MODE" jdbcType="VARCHAR" property="runMode" />
+		 <result column="IS_MSG_NOTIFY" jdbcType="VARCHAR" property="isMsgNotify" />
+		 <result column="CAL_PARAM_UNIT" jdbcType="VARCHAR" property="calParamUnit" />
+		 <result column="MAX_LIMIT_UPLOAD" jdbcType="INTEGER" property="maxLimitUpload" />
+		 <result column="MULTIPLE_X" jdbcType="DECIMAL" property="multipleX" />
+		 <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+		 <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+	</resultMap>
+	
+	<select id="getUserSettingByOid" resultMap="BaseResultMap"
+          parameterType="java.util.HashMap" >
+    	select * from USER_SETTING WHERE USER_OID = #{userOid,jdbcType=DECIMAL}
+  	</select>
+
+	<insert id="insertUserSetting" parameterType="com.violet.ocpc.web.holder.UserSettingHolder">
+		INSERT INTO USER_SETTING (
+			USER_OID, RUN_MODE, IS_MSG_NOTIFY, CAL_PARAM_UNIT,
+			MAX_LIMIT_UPLOAD, MULTIPLE_X, CREATE_DATE, UPDATE_DATE
+		) VALUES (
+			#{userOid, jdbcType=DECIMAL}, #{runMode, jdbcType=VARCHAR}, #{isMsgNotify, jdbcType=VARCHAR},
+			#{calParamUnit, jdbcType=VARCHAR}, #{maxLimitUpload, jdbcType=INTEGER}, 
+			#{multipleX, jdbcType=DECIMAL}, CURRENT_TIMESTAMP, #{updateDate, jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+</mapper>

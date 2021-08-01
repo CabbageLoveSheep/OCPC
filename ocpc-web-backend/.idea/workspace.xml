@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ec86284-1c12-422f-baba-4cb2d28a7083" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mia_web_backend_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mia_web_backend_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mia-web-backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apimock/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apimock/msgApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apimock/shiroApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apis/adminApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apis/apis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apis/mayiApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apis/msgApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/apis/shiroApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/assets/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/common/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/OrganizationTree.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysAcl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysLog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysPosition.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysResource.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysRole.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysRoleMap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/admin/SysUser.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/ckeditor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/403.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/404.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/Footer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/Sidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/Tags.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/common/bus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/flex/bottom.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/flex/transition.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/formpage/formpage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/goods/shopping.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/mayi/tree.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/message/msg.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/other/honor.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/searchinput/searchinput.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/searchinput/searchinput_old.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/tablepage/detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/tablepage/messageboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/tablepage/messageboard2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/tablepage/tablepage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/tabpage/tabpage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/test/RouteDev.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/test/bangka.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/topdf/test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/topdf/topdf.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/treepage/treepage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/yanshi/yanshi.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/components/zanzhu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/directive/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/router/routeDev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/components/addMenus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/components/addPermission.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/components/addRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/components/convertRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/components/lazyLoading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/src/store/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/color-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/theme-green/color-green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/theme-green/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/theme-green/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/css/theme-green/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/hongbao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/honor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/jinli3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/付款01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/付款02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/付款码.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/前端工程师01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/前端工程师02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/前端工程师03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/shopping/前端工程师04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/weixin1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/weixin2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/zhifubao1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/zhifubao2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/img/杨超越签名.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/imgtest/logo_pingan.bmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ocpc-web-frontend/static/imgtest/pingan_yinzhang.gif" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mia-web-backend.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="692">
+              <caret line="178" column="12" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/config/DataSourceConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-pre.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mia</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/config/DataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-pre.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Tool/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\Tool\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mia-web-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ocpc-web-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1627804895891" />
+    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mia-web-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.violet.mia.web.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ec86284-1c12-422f-baba-4cb2d28a7083" name="Default Changelist" comment="" />
+      <created>1627803633830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627803633830</updated>
+      <workItem from="1627803637666" duration="1088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1088000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mia-web-backend.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="178" column="12" selection-start-line="178" selection-start-column="12" selection-end-line="178" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/violet/ocpc/web/config/DataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-pre.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.violet.ocpc.web.dao.mapper.ProjectFileMapper">
+	<resultMap id="BaseResultMap" type="com.violet.ocpc.web.holder.ProjectFileHolder">
+		 <id column="FILE_OID" jdbcType="DECIMAL" property="fileOid" />
+		 <result column="PROJ_OID" jdbcType="DECIMAL" property="projOid" />
+		 <result column="FILE_NAME" jdbcType="VARCHAR" property="filename" />
+		 <result column="NEW_FILE_NAME" jdbcType="VARCHAR" property="newFilename" />
+		 <result column="FILE_PATH" jdbcType="VARCHAR" property="filePath" />
+		 <result column="GRAYSCALE" jdbcType="VARCHAR" property="grayscale" />
+		 <result column="RECOMMEND_LINE" jdbcType="INTEGER" property="recommendLine" />
+		 <result column="CREATE_DATE" jdbcType="TIMESTAMP" property="createDate" />
+		 <result column="UPDATE_DATE" jdbcType="TIMESTAMP" property="updateDate" />
+	</resultMap>
+	
+	<insert id="insertProjectFile" parameterType="com.violet.ocpc.web.holder.ProjectFileHolder">
+		INSERT INTO PROJ_FILE (
+			FILE_OID, PROJ_OID, FILE_NAME, NEW_FILE_NAME, FILE_PATH, GRAYSCALE,
+			RECOMMEND_LINE, CREATE_DATE, UPDATE_DATE
+		) VALUES (
+			#{fileOid,jdbcType=DECIMAL}, #{projOid,jdbcType=DECIMAL}, #{filename,jdbcType=VARCHAR},
+			#{newFilename,jdbcType=VARCHAR}, #{filePath,jdbcType=VARCHAR}, #{grayscale,jdbcType=VARCHAR},
+			#{recommendLine,jdbcType=VARCHAR}, CURRENT_TIMESTAMP, #{updateDate, jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<select id="getProjectFilesByAnd" parameterType="com.violet.ocpc.web.holder.ProjectFileHolder"
+		resultMap="BaseResultMap">
+		SELECT * FROM PROJ_FILE
+		<where>
+		  <if test="fileOid != null" >
+		  	FILE_OID = #{fileOid,jdbcType=DECIMAL}
+		  </if>
+		  <if test="filename != null" >
+		  	AND FILE_NAME = #{filename,jdbcType=VARCHAR}
+		  </if>
+		  <if test="projOid != null" >
+		  	AND PROJ_OID = #{projOid,jdbcType=DECIMAL}
+		  </if>
+		</where>
+	</select>
+</mapper>
